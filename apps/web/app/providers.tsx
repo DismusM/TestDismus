@@ -8,15 +8,15 @@ const theme = createTheme({
   colors: {
     'custom-blue': [
       '#e6f3ff',
-      '#cce7ff', 
+      '#cce7ff',
       '#99cfff',
       '#66b7ff',
-      '#54AEFF', // Primary color
-      '#80C4FF', // Lighter hover state
-      '#3399ff',
-      '#0080ff',
-      '#0066cc',
-      '#003366',
+      '#3B82F6', // Primary color - darker blue
+      '#2563EB', // Lighter hover state
+      '#1D4ED8',
+      '#1E40AF',
+      '#1E3A8A',
+      '#172554',
     ],
     'custom-teal': [
       '#e6fbf9',
