@@ -1,30 +1,43 @@
 # 🚀 Dismus Mumanthi - Bubble.io Developer Portfolio
 
-A modern, responsive portfolio website showcasing expertise in Bubble.io development, built with cutting-edge web technologies.
+A stunning, modern portfolio website showcasing expertise in Bubble.io development, built with cutting-edge web technologies and advanced UI/UX design principles.
 
 ![Portfolio Preview](https://img.shields.io/badge/Status-Live%20Demo-blue?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Next.js%20%7C%20TypeScript%20%7C%20Mantine-blue?style=for-the-badge)
 ![Deployment](https://img.shields.io/badge/Deployment-Cloudflare%20Pages-green?style=for-the-badge)
+![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Supported-purple?style=for-the-badge)
 
 ## ✨ Features
 
-### 🎨 **Modern Design**
+### 🎨 **Advanced Design System**
 - **Custom Color Palette**: Primary #54AEFF blue with complementary teal (#26D4C4) and orange (#FF8C66)
-- **Typography**: Inter font from Google Fonts with proper hierarchy
+- **Gradient Backgrounds**: Beautiful gradient effects from #54AEFF to #26D4C4
+- **Dark Mode Toggle**: Seamless light/dark theme switching with #54AEFF accents
+- **Typography**: Inter font from Google Fonts with proper hierarchy and weights
 - **Responsive Layout**: Mobile-first design that looks great on all devices
-- **Smooth Animations**: Micro-interactions and hover effects
+- **Micro-Animations**: Subtle hover effects, floating elements, and smooth transitions
 
 ### 🛠 **Technical Excellence**
 - **Monorepo Architecture**: Built with Turborepo for scalable development
 - **TypeScript**: Full type safety and better developer experience
 - **Modern React**: Next.js 15 with App Router for optimal performance
 - **UI Framework**: Mantine v8 for beautiful, accessible components
+- **Performance Optimized**: Lighthouse scores of 95+ across all metrics
 
 ### 📱 **User Experience**
-- **Fast Loading**: Optimized for performance with Next.js
-- **Accessibility**: WCAG 2.1 AA compliant design
-- **SEO Optimized**: Proper metadata and structured content
-- **Cross-browser**: Works seamlessly across all modern browsers
+- **Full-Screen Hero Section**: Parallax background with floating elements and bold typography
+- **Interactive Navigation**: Sticky navbar with smooth scrolling and active states
+- **Skills Visualization**: Dynamic progress bars with custom animations
+- **Project Showcase**: Card-based layout with hover effects and tech badges
+- **Contact Section**: Professional call-to-action with gradient buttons
+- **Accessibility**: WCAG 2.1 AA compliant design with proper ARIA labels
+
+### 🎯 **Interactive Elements**
+- **Hover Effects**: Buttons scale up and glow with custom colors
+- **Scroll Animations**: Elements fade in as users scroll through sections
+- **Dark Mode**: Toggle between light and dark themes with smooth transitions
+- **Progress Indicators**: Animated skill bars with gradient fills
+- **Floating Elements**: Parallax background shapes with CSS animations
 
 ## 🏗 Tech Stack
 
@@ -38,11 +51,11 @@ A modern, responsive portfolio website showcasing expertise in Bubble.io develop
 | **Open Next** | Deployment | 3.1.3 |
 
 ### 🎯 **Key Libraries**
-- `@mantine/core` - UI component library
-- `@mantine/hooks` - Custom React hooks
+- `@mantine/core` - UI component library with theme system
+- `@mantine/hooks` - Custom React hooks including useColorScheme
 - `@mantine/notifications` - Toast notifications
-- `@tabler/icons-react` - Beautiful icons
-- `@emotion/react` - CSS-in-JS styling
+- `@tabler/icons-react` - Beautiful icons for all sections
+- `@emotion/react` - CSS-in-JS styling for custom animations
 
 ## 🚀 Getting Started
 
@@ -96,8 +109,8 @@ TestDismus/
 │   ├── web/                 # Main portfolio application
 │   │   ├── app/            # Next.js App Router
 │   │   │   ├── layout.tsx  # Root layout with providers
-│   │   │   ├── page.tsx    # Homepage component
-│   │   │   └── providers.tsx # Mantine theme provider
+│   │   │   ├── page.tsx    # Homepage with hero, skills, projects
+│   │   │   └── providers.tsx # Mantine theme provider with dark mode
 │   │   ├── public/         # Static assets
 │   │   └── package.json    # Web app dependencies
 │   └── docs/               # Documentation site
@@ -112,22 +125,34 @@ TestDismus/
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary Blue**: `#54AEFF` - Main brand color
-- **Secondary Teal**: `#26D4C4` - Accent color
-- **Accent Orange**: `#FF8C66` - Highlight color
+- **Primary Blue**: `#54AEFF` - Main brand color for buttons and accents
+- **Secondary Teal**: `#26D4C4` - Complementary accent color
+- **Accent Orange**: `#FF8C66` - Highlight color for special elements
+- **Light Hover**: `#80C4FF` - Lighter blue for hover states
+- **Dark Background**: `#121212` - Dark mode background
 - **Neutral Grays**: For text and backgrounds
 
 ### Typography
-- **Primary Font**: Inter (Google Fonts)
-- **Headings**: Bold weights (700) with proper hierarchy
-- **Body Text**: 16px with 1.5 line height for readability
+- **Primary Font**: Inter (Google Fonts) with display: 'swap'
+- **Headings**: Bold weights (700-800) with proper hierarchy
+- **Body Text**: 16px with 1.5-1.6 line height for readability
 - **Monospace**: JetBrains Mono for code snippets
+- **Font Sizes**: 2.5rem (h1), 2rem (h2), 1.5rem (h3), 1.25rem (h4)
 
-### Components
-- **Buttons**: Custom styled with hover effects
-- **Cards**: Paper components with shadows and borders
-- **Layout**: Container-based responsive design
-- **Navigation**: Sticky header with smooth scrolling
+### Components & Animations
+- **Hero Section**: Full-screen with gradient background and parallax elements
+- **Navigation**: Sticky navbar with dark mode toggle
+- **Skill Cards**: Interactive cards with progress bars and hover effects
+- **Project Cards**: Asymmetrical grid with tech badges and animations
+- **Buttons**: Gradient and outline variants with hover transformations
+- **Floating Elements**: CSS animations for background shapes
+
+### Responsive Design
+- **Mobile-First**: 320px breakpoint with stacked layouts
+- **Tablet**: 768px breakpoint with grid adjustments
+- **Desktop**: 1024px+ with full feature set
+- **Touch-Friendly**: 48px minimum tap targets
+- **Fluid Typography**: Responsive font sizing
 
 ## 🌐 Deployment
 
@@ -162,9 +187,11 @@ This portfolio is optimized for deployment on Cloudflare Pages using Open Next:
 
 ### Styling Guidelines
 - Use Mantine components when possible
-- Follow the established color palette
+- Follow the established color palette and gradients
 - Maintain consistent spacing using theme values
 - Ensure responsive design for all components
+- Add hover effects and micro-animations
+- Test dark mode compatibility
 
 ### Code Quality
 - TypeScript strict mode enabled
@@ -179,12 +206,47 @@ This portfolio is optimized for deployment on Cloudflare Pages using Open Next:
 - **Font Loading**: Google Fonts with display: 'swap'
 - **Code Splitting**: Automatic with Next.js App Router
 - **Bundle Analysis**: Built-in Next.js bundle analyzer
+- **CSS-in-JS**: Efficient styling with Emotion
+- **Lazy Loading**: Automatic component lazy loading
 
 ### Lighthouse Scores
 - **Performance**: 95+
 - **Accessibility**: 100
 - **Best Practices**: 100
 - **SEO**: 100
+
+## 🎯 Key Features Implemented
+
+### Hero Section
+- ✅ Full-screen gradient background (#54AEFF to #26D4C4)
+- ✅ Parallax floating elements with CSS animations
+- ✅ Bold typography with "Crafting No-Code Magic with Bubble"
+- ✅ Glassmorphism buttons with backdrop blur
+- ✅ Responsive design for all devices
+
+### Navigation & Dark Mode
+- ✅ Sticky navigation with smooth scrolling
+- ✅ Dark mode toggle with sun/moon icons
+- ✅ Active state indicators
+- ✅ Responsive mobile menu
+
+### Skills Section
+- ✅ Interactive skill cards with icons
+- ✅ Animated progress bars with gradients
+- ✅ Hover effects with transform animations
+- ✅ Responsive grid layout
+
+### Projects Showcase
+- ✅ Card-based layout with tech badges
+- ✅ Hover animations with shadow effects
+- ✅ Gradient project thumbnails
+- ✅ Call-to-action buttons
+
+### Contact & Footer
+- ✅ Professional contact section
+- ✅ Social media links with icons
+- ✅ Gradient buttons with hover effects
+- ✅ Copyright and branding
 
 ## 🤝 Contributing
 
@@ -206,6 +268,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - API integrations and custom workflows
 - Responsive and accessible design
 - Performance optimization
+- Modern web technologies
 
 ### Connect
 - **Portfolio**: [your-website.com](https://your-website.com)
@@ -217,4 +280,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
   <p>Built with ❤️ using Next.js, TypeScript, and Mantine</p>
   <p>Deployed on Cloudflare Pages</p>
+  <p>Featuring advanced UI/UX with dark mode and micro-animations</p>
 </div>
